@@ -78,7 +78,7 @@ module.exports = function(grunt) {
             var defaultPath = '';
             if (opts.includePath) {
               defaultPath = path.relative(
-                opts.pathRelativeTo, path.dirname(filename)).replace(/\//g, '/');
+                opts.pathRelativeTo, path.dirname(filename)).replace(/\\/g, '/');
 
               if (defaultPath !== '') {
                 defaultPath += '/';
